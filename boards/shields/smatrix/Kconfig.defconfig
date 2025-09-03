@@ -1,0 +1,22 @@
+if SHIELD_SMATRIX_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "SpritMatrix50"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SMATRIX_LEFT || SHIELD_SMATRIX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    default 30
+
+config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    default 10
+
+endif

@@ -1,0 +1,5 @@
+config SHIELD_SMATRIX_LEFT
+    def_bool $(shields_list_contains,smatrix_left)
+
+config SHIELD_SMATRIX_RIGHT
+    def_bool $(shields_list_contains,smatrix_right)

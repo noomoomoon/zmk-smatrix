@@ -1,0 +1,166 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 800
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
+
+#include <dt-bindings/zmk/pointing.h>
+
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&mt {
+    flavor = "balanced";
+    quick-tap-ms = <0>;
+};
+
+&msc {
+    delay-ms = <0>;
+    trigger-period-ms = <10>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+};
+
+/ {
+    input_processors {
+        zip_wheel_scaler: zip_wheel_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+            track-remainders;
+        };
+    };
+};
+
+&msc_input_listener {
+    warp {
+        layers = <0>;
+        input-processors = <&zip_wheel_scaler 4 1>;
+    };
+    precision {
+        layers = <1>;
+        input-processors = <&zip_wheel_scaler 1 2>;
+    };
+};
+
+/ {
+    behaviors {
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        mouse_click: mouse_button_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&mkp>, <&mkp>;
+        };
+
+        mouse_scrl: mouse_wheel_scrl {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <10>;
+        };
+
+        macro_w_sshot: macro_w_sshot {
+            compatible = "zmk,behavior-macro";
+            label = "Win Screenshot Macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT>;
+        };
+
+        macro_m_sshot: macro_m_sshot {
+            compatible = "zmk,behavior-macro";
+            label = "Mac Screenshot Macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT>;
+        };
+
+        macro_w_TMute: macro_w_TMute {
+            compatible = "zmk,behavior-macro";
+            label = "Win Teams Mic Mute";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LALT>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LGUI &kp LALT>;
+        };
+    };
+
+    macros {
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&kp TAB    &kp Q           &kp W     &kp E     &kp R        &kp T                                           &kp Y        &kp U          &kp I      &kp O       &kp P     &kp MINUS
+&kp LCTRL  &kp A           &kp S     &kp D     &kp F        &kp G                                           &kp H        &kp J          &kp K      &kp L       &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z           &kp X     &kp C     &kp V        &kp B        &macro_w_TMute    &tog 1           &kp N        &kp M          &kp COMMA  &kp PERIOD  &kp UP    &mt RSHFT SLASH
+&kp ESC    &macro_w_sshot  &kp LGUI  &kp LALT  &lt 2 SPACE  &lt 3 LANG2                                     &lt 4 LANG1  &kp BACKSPACE  &kp DEL    &kp LEFT    &kp DOWN  &kp RIGHT
+            >;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN    &mouse_scrl SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_1 {
+            bindings = <
+&mt LCTRL TAB  &kp Q           &kp W     &kp E     &kp R        &kp T                                           &kp Y        &kp U          &kp I      &kp O       &kp P     &kp MINUS
+&kp LGUI       &kp A           &kp S     &kp D     &kp F        &kp G                                           &kp H        &kp J          &kp K      &kp L       &kp SEMI  &kp ENTER
+&kp LSHFT      &kp Z           &kp X     &kp C     &kp V        &kp B        &macro_w_TMute    &tog 1           &kp N        &kp M          &kp COMMA  &kp PERIOD  &kp UP    &mt RSHFT SLASH
+&kp ESC        &macro_m_sshot  &kp LGUI  &kp LALT  &lt 2 SPACE  &lt 3 LANG2                                     &lt 4 LANG1  &kp BACKSPACE  &kp DEL    &kp LEFT    &kp DOWN  &kp RIGHT
+            >;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN    &mouse_scrl SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &kp EXCL        &kp AT    &kp EQUAL   &kp APOS   &kp TILDE                    &trans  &trans  &kp LPAR  &kp RPAR  &kp PERCENT  &kp PIPE
+&trans  &kp AMPS        &kp HASH  &kp DOLLAR  &kp DQT    &trans                       &trans  &trans  &kp LBKT  &kp RBKT  &trans       &trans
+&trans  &trans          &trans    &kp CARET   &kp GRAVE  &trans     &trans    &trans  &trans  &trans  &kp LBRC  &kp RBRC  &kp PG_UP    &kp BSLH
+&trans  &macro_m_sshot  &trans    &trans      &trans     &trans                       &trans  &trans  &trans    &kp HOME  &kp PG_DN    &kp END
+            >;
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN    &mouse_scrl SCRL_LEFT SCRL_RIGHT>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp KP_NUM  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK  &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N0   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_PLUS      &kp KP_SLASH
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans      &trans     &trans     &kp COMMA  &kp KP_DOT       &kp COLON
+            >;
+
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN    &mouse_click MB5 MB4>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &kp F12 &kp F7  &kp F8  &kp F9  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                                &kp F11 &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &bt BT_CLR    &trans  &kp F10 &kp F1  &kp F2  &kp F3  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN    &rot_kp PG_UP PG_DN>;
+        };
+    };
+};
