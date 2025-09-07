@@ -1,7 +1,9 @@
-<h1>SplitMatrix50 について</h1>
+# SplitMatrix50 について
 SplitMatrix50 は、左右分割とオーソリニア配列のワイヤレス50キー自作キーボードです。はんだ付け不要の簡単組み立て。薄型・軽量でデスクもカバンもすっきり、ローラーボリュームで音量などを直感的に操作できます。
 <br><br>
-<center><img src="img/README_2025-09-07-15-19-22.png" width="700"></center>
+<p align="center">
+    <img src="img/README_2025-09-07-15-19-22.png" width="700">
+</p>
 <br>
 
 - [目次](#目次)
@@ -29,7 +31,9 @@ SplitMatrix50 は、左右分割とオーソリニア配列のワイヤレス50�
 <br>
 
 - 薄型、小型軽量、ケーブル不要なので、スマートに持ち運びができます
-<center><img src="img/README_2025-09-07-17-53-46.png" width="600"></center>
+<p align="center">
+    <img src="img/README_2025-09-07-17-53-46.png" width="600">
+</p>
 <br>
 
 - 50キーにより、60％キーボードからの移行が比較的スムーズ
@@ -37,20 +41,26 @@ SplitMatrix50 は、左右分割とオーソリニア配列のワイヤレス50�
 <br>
 
 - ローラーボリュームの上下回転により、直感的なボリューム操作ができます。また、キースイッチを内蔵しています。マイクミュートなどのショートカットキーを割り当てると便利です
-<center><img src="img/README_2025-09-07-15-21-36.png" width="400"></center>
+<p align="center">
+    <img src="img/README_2025-09-07-15-21-36.png" width="400">
+</p>
 <br>
 
 - 外側キーを幅広(1.5U)にしています。親指用も幅広(1.5U)にすることで、姿勢のブレによるミスタイプを防ぎます
-<center><img src="img/README_2025-09-07-15-22-33.png" width="400"></center>
+<p align="center">
+    <img src="img/README_2025-09-07-15-22-33.png" width="400">
+</p>
 
 <br>
 
 ### 商品写真
-<center><img src="img/README_2025-09-07-15-25-10.png" width="600"></center>
-<center><img src="img/README_2025-09-07-15-25-21.png" width="600"></center>
-<center><img src="img/README_2025-09-07-15-25-39.png" width="300"></center>
-<center><img src="img/README_2025-09-07-15-30-01.png" width="300"></center>
-<center><img src="img/README_2025-09-07-15-30-24.png" width="400"></center>
+<p align="center">
+    <img src="img/README_2025-09-07-15-25-10.png" width="600">
+    <img src="img/README_2025-09-07-15-25-21.png" width="600">
+    <img src="img/README_2025-09-07-15-25-39.png" width="300">
+    <img src="img/README_2025-09-07-15-30-01.png" width="300">
+    <img src="img/README_2025-09-07-15-30-24.png" width="400">
+</p>
 
 <br>
 
