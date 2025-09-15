@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: misshii-hub
-      url-base: https://github.com/misshii3/zmk-config-smatrix
+      url-base: https://github.com/misshii3/zmk-smatrix
     - name: caksoylar  # RGB LED
       url-base: https://github.com/caksoylar  
   projects:

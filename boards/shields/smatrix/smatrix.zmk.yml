@@ -2,7 +2,7 @@ file_format: "1"
 id: SpritMatrix
 name: SpritMatrix
 type: shield
-url: https://github.com/misshii3/zmk-config-smatrix
+url: https://github.com/misshii3/zmk-smatrix
 requires: [seeeduino_xiao_ble]
 features:
   - keys
