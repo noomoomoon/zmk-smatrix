@@ -1,8 +1,8 @@
 # SplitMatrix50 取扱説明書
 ご使用前に、この取扱説明書をお読みの上、正しく安全にお使いください。
 最新の取扱説明書は、以下でご確認ください。
-https://github.com/misshii3/zmk-smatrix/blob/main/MANUAL.md
 <br>
+https://github.com/misshii3/zmk-smatrix/blob/main/MANUAL.md
 <img src="img/QR_MANUAL.png" width="100">
 <br>
 
@@ -189,65 +189,79 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 <a id="sec-6-6-1"></a>
 #### 6.6.1 GitHubアカウント登録とサインイン
 （初回のみ）[GitHub](https://github.co.jp/)アカウントを登録します。
+<br>
 <img src="img/README_2025-09-12-00-24-41.png" width="500">
 <br>
 
 アカウント作成に必要な項目を入力します。
+<br>
 <img src="img/README_2025-09-12-00-45-56.png" width="500">
 <br>
 
 入力したメールアドレスに届いたコードを入力します。
+<br>
 <img src="img/README_2025-09-12-00-53-02.png" width="500">
 <br>
 
 サインインします。
+<br>
 <img src="img/README_2025-09-12-01-00-02.png" width="500">
 <br>
 
 <a id="sec-6-6-2"></a>
 #### 6.6.2 zmk-smatrixリポジトリをフォークする
  **ご自身のGitHubにサインインした後**、検索ボックスに `misshii3/zmk-smatrix` を入力
+<br>
 <img src="img/README_2025-09-12-01-07-48.png" width="500">
 <br>
 
 `misshii3/zmk-smatrix`を選択する
+<br>
 <img src="img/README_2025-09-12-19-09-47.png" width="500">
 <br>
 
 「Fork」の右の「▼」を選択し、「+ Create a new fork」を選択する
+<br>
 <img src="img/README_2025-09-12-19-12-43.png" width="500">
 <br>
 
 「Create a new fork」ボタンを選択する。\
 これで、あなたのGitHubアカウントに`zmk-smatrix`が、フォーク（コピー）されます。
+<br>
 <img src="img/README_2025-09-12-19-14-10.png" width="500">
 <br>
 
 <a id="sec-6-6-3"></a>
 #### 6.6.3 ファームウェアをビルドする
 「Actions」を選択する
+<br>
 <img src="img/README_2025-09-12-19-20-58.png" width="500">
 <br>
 ファームウェアビルドを行うため、ワークフローを有効にする必要があります。
 「I understand my workflows, go ahead and enable them」ボタンを選択します。
+<br>
 <img src="img/README_2025-09-12-19-24-30.png" width="500">
 <br>
 
 「.github/workflows/build.yml」を選択します。
+<br>
 <img src="img/README_2025-09-12-19-39-58.png" width="500">
 <br>
 
 「Run workflow ▼」ボタンを選択し、「Run workflow」ボタンを選択します。これにより、ファームウェアのビルドが開始されます。
+<br>
 <img src="img/README_2025-09-12-19-41-31.png" width="500">
 <br>
 
 ビルド中を示す「黄色のアイコン」が3分〜7分程度表示されます。\
 ※ビルド時間は、都度変化します。
+<br>
 <img src="img/README_2025-09-12-19-42-48.png" width="500">
 <br>
 
 ビルドが完了すると「緑色のチェックアイコン」が表示されます。\
 「.github/workflows/build.yml」を選択してください。
+<br>
 <img src="img/README_2025-09-12-19-43-14.png" width="500">
 <br>
 
@@ -259,6 +273,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 #### 6.7.1 ファームウェアのダウンロード、ファイルの解凍
 下側の「firmware」の右の、「ダウンロードアイコン」を選択します。\
 ビルドされたファームウェアがPCにダウンロードされます。
+<br>
 <img src="img/README_2025-09-12-19-43-38.png" width="500">
 <br>
 
@@ -267,6 +282,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 - settings_reset... リセット用ファイル
 - smatrix_left... 左手用ファームウェア
 - smatrix_right... 右手用ファームウェア
+<br>
 <img src="img/README_2025-09-13-00-20-33.png" width="500">
 <br>
 
@@ -300,15 +316,18 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 **Macの場合**  
 転送時にエラーメッセージが出ることがありますが、問題ありません。  
 そのままウィンドウを閉じて次の操作に進んでください。
+<br>
 <img src="img/README_2025-09-13-00-43-01.png" width="500">
 <br>
 
 <a id="sec-6-7-2-3"></a>
 ##### 6.7.2.3 左手側(親)のファームウェアを書き込む
 右手側のUSBケーブルを外し、PCと左手側をUSBケーブルで接続します。
+<br>
 <p align="center">
   <img src="img/README_2025-09-13-11-34-42.png" width="300">
 </p>
+<br>
    すると「XIAO-SENSE」(Macの場合：NO NAME)というドライブがPC上に表示されます。
 
 1. `settings_reset...` というファイルを、表示されたドライブにドラッグ＆ドロップしてください。
@@ -327,6 +346,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 #### 6.8.1 Bluetooth接続
 - SplitMatrix50の左右ともスライドスイッチONにしてください。
 - すでにペアリング済みの場合、ペアリングを削除してからデバイスを追加してください
+<br>
 <img src="img/README_2025-09-13-11-56-42.png" width="500">
 <br>
 
@@ -353,12 +373,14 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 #### 6.9.1 GitHubアカウントにKeymapEditorを接続
 
 - [KeymapEditor](https://nickcoutsos.github.io/keymap-editor/)を表示し、「GitHub」を選択します。
+<br>
 <img src="img/README_2025-09-13-18-50-42.png" width="500">
 <br>
 
 <a id="sec-6-9-2"></a>
 #### 6.9.2 GitHubにログイン
 - GitHubにログインしてください。
+<br>
 <img src="img/README_2025-09-13-18-52-18.png" width="500">
 <p align="center">
   <img src="img/README_2025-09-13-18-53-14.png" width="300">
@@ -366,24 +388,30 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 <br>
 
 - GitHubにKeymapEditorの接続を承認するため、「Authorize Keymap Editor」ボタンを選択します。
+<br>
 <p align="center">
   <img src="img/README_2025-09-13-18-55-32.png" width="300">
 </p>
 <br>
 
 - 「Add Repository」ボタンを選択します。
+<br>
 <img src="img/README_2025-09-13-19-01-36.png" width="500">
 <br>
 
 - 「Only select repositories」→「Select repositories」→「zmk-smatrix」を選択します。
+<br>
 <p align="center">
   <img src="img/README_2025-09-13-19-02-18.png" width="300">
 </p>
+<br>
 
 - 「Install」を選択します。
+<br>
 <p align="center">
   <img src="img/README_2025-09-13-19-08-03.png" width="300">
 </p>
+<br>
 
 - ここまでの操作により、KeymapEditorがあなたのGitHubアカウントに接続されました。
 - これで、あなたのGitHubリポジトリ`zmk-smatrix`のキーマップを、KeymapEditorで編集することができます。
@@ -404,6 +432,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
     - 左ローラーボリューム押下（Bの右）：Teams等のマイクミュート
       - マクロ：Win + Alt + K
     - 右ローラーボリューム押下（Nの左）：Layer 1（Macレイヤー）に切り替え
+<br>
 <img src="img/README_2025-09-13-19-37-10.png" width="500">
 <br>
 
@@ -412,18 +441,22 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
     - Zの下：Macのスクリーンショット
       - マクロ：Command + Shift + 4
     - 右ローラーボリューム押下（Nの左）：Layer 0（Windowsレイヤー）に戻す
+<br>
 <img src="img/README_2025-09-13-19-38-52.png" width="500">
 <br>
 
 - Layer 2：記号のレイヤー
+<br>
 <img src="img/README_2025-09-13-19-39-32.png" width="500">
 <br>
 
 - Layer 3：数字、算術記号などのレイヤー
+<br>
 <img src="img/README_2025-09-13-19-39-43.png" width="500">
 <br>
 
 - Layer 4：Bluetooth切り替え、ファンクションキーのレイヤー
+<br>
 <img src="img/README_2025-09-13-19-39-56.png" width="500">
 <br>
 
@@ -432,6 +465,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 - キーマップを編集したら、「Save」ボタンを選択してください。設定が保存され、自動的にファームウェアがビルドされます。ビルド時間は3分〜7分程度
 - 「Save」ボタンの右の「青いボタン」を選択すると、ファームウェアのダウンロード画面に遷移します。
 - ファームウェアをダウンロードし、キーボードに書き込むことで、キーマップ変更が反映されます。
+<br>
 <img src="img/README_2025-09-13-19-41-11.png" width="500">
 <br>
 
