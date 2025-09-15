@@ -44,7 +44,7 @@
     <br><br>
     <img src="img/manual_2025-09-15-14-22-49.png" width="300">
     <br><br>
-    <img src="img/manual_2025-09-15-14-31-20.png" width="500">
+    <img src="img/manual_2025-09-15-14-31-20.png" width="600">
     <br><br>
     <img src="img/manual_2025-09-15-14-18-36.png" width="400">
     <br><br>
@@ -117,7 +117,7 @@
   もしも極性が逆になっているリチウムポリマー電池を購入した場合でも、ご自身による改造や極性の変更は、危険ですので絶対に行わないでください。\
   初回接続および毎回接続を行う前に、必ず正しい配線になっているか十分に確認してから接続してください。
   <p align="center">
-    <img src="img/README_2025-09-13-14-35-58.png" width="500">
+    <img src="img/README_2025-09-13-14-35-58.png" width="600">
   </p>
 <br>
 
@@ -197,28 +197,28 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 （初回のみ）[GitHub](https://github.co.jp/)アカウントを登録します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-00-24-41.png" width="500">
+    <img src="img/README_2025-09-12-00-24-41.png" width="600">
 </p>
 <br>
 
 アカウント作成に必要な項目を入力します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-00-45-56.png" width="500">
+    <img src="img/README_2025-09-12-00-45-56.png" width="600">
 </p>
 <br>
 
 入力したメールアドレスに届いたコードを入力します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-00-53-02.png" width="500">
+    <img src="img/README_2025-09-12-00-53-02.png" width="600">
 </p>
 <br>
 
 サインインします。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-01-00-02.png" width="500">
+    <img src="img/README_2025-09-12-01-00-02.png" width="600">
 </p>
 <br>
 
@@ -227,21 +227,21 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
  **ご自身のGitHubにサインインした後**、検索ボックスに `misshii3/zmk-smatrix` を入力
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-01-07-48.png" width="500">
+    <img src="img/README_2025-09-12-01-07-48.png" width="600">
 </p>
 <br>
 
 `misshii3/zmk-smatrix`を選択する
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-09-47.png" width="500">
+    <img src="img/README_2025-09-12-19-09-47.png" width="600">
 </p>
 <br>
 
 「Fork」の右の「▼」を選択し、「+ Create a new fork」を選択する
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-12-43.png" width="500">
+    <img src="img/README_2025-09-12-19-12-43.png" width="600">
 </p>
 <br>
 
@@ -249,7 +249,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 これで、あなたのGitHubアカウントに`zmk-smatrix`が、フォーク（コピー）されます。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-14-10.png" width="500">
+    <img src="img/README_2025-09-12-19-14-10.png" width="600">
 </p>
 <br>
 
@@ -258,28 +258,28 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 「Actions」を選択する
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-20-58.png" width="500">
+    <img src="img/README_2025-09-12-19-20-58.png" width="600">
 </p>
 <br>
 ファームウェアビルドを行うため、ワークフローを有効にする必要があります。
 「I understand my workflows, go ahead and enable them」ボタンを選択します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-24-30.png" width="500">
+    <img src="img/README_2025-09-12-19-24-30.png" width="600">
 </p>
 <br>
 
 「.github/workflows/build.yml」を選択します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-39-58.png" width="500">
+    <img src="img/README_2025-09-12-19-39-58.png" width="600">
 </p>
 <br>
 
 「Run workflow ▼」ボタンを選択し、「Run workflow」ボタンを選択します。これにより、ファームウェアのビルドが開始されます。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-41-31.png" width="500">
+    <img src="img/README_2025-09-12-19-41-31.png" width="600">
 </p>
 <br>
 
@@ -287,7 +287,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 ※ビルド時間は、都度変化します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-42-48.png" width="500">
+    <img src="img/README_2025-09-12-19-42-48.png" width="600">
 </p>
 <br>
 
@@ -295,7 +295,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 「.github/workflows/build.yml」を選択してください。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-43-14.png" width="500">
+    <img src="img/README_2025-09-12-19-43-14.png" width="600">
 </p>
 <br>
 
@@ -309,7 +309,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 ビルドされたファームウェアがPCにダウンロードされます。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-12-19-43-38.png" width="500">
+    <img src="img/README_2025-09-12-19-43-38.png" width="600">
 </p>
 <br>
 
@@ -320,7 +320,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 - smatrix_right... 右手用ファームウェア
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-00-20-33.png" width="500">
+    <img src="img/README_2025-09-13-00-20-33.png" width="600">
 </p>
 <br>
 
@@ -356,7 +356,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 そのままウィンドウを閉じて次の操作に進んでください。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-00-43-01.png" width="500">
+    <img src="img/README_2025-09-13-00-43-01.png" width="600">
 </p>
 <br>
 
@@ -388,7 +388,7 @@ GitHubを使用し、動作確認済みのリポジトリをフォーク（コ�
 - すでにペアリング済みの場合、ペアリングを削除してからデバイスを追加してください
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-11-56-42.png" width="500">
+    <img src="img/README_2025-09-13-11-56-42.png" width="600">
 </p>
 <br>
 
@@ -417,7 +417,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 - [KeymapEditor](https://nickcoutsos.github.io/keymap-editor/)を表示し、「GitHub」を選択します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-18-50-42.png" width="500">
+    <img src="img/README_2025-09-13-18-50-42.png" width="600">
 </p>
 <br>
 
@@ -426,7 +426,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 - GitHubにログインしてください。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-18-52-18.png" width="500">
+    <img src="img/README_2025-09-13-18-52-18.png" width="600">
 </p>
 <p align="center">
   <img src="img/README_2025-09-13-18-53-14.png" width="300">
@@ -443,7 +443,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 - 「Add Repository」ボタンを選択します。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-01-36.png" width="500">
+    <img src="img/README_2025-09-13-19-01-36.png" width="600">
 </p>
 <br>
 
@@ -482,7 +482,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
     - 右ローラーボリューム押下（Nの左）：Layer 1（Macレイヤー）に切り替え
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-37-10.png" width="500">
+    <img src="img/README_2025-09-13-19-37-10.png" width="600">
 </p>
 <br>
 
@@ -493,28 +493,28 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
     - 右ローラーボリューム押下（Nの左）：Layer 0（Windowsレイヤー）に戻す
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-38-52.png" width="500">
+    <img src="img/README_2025-09-13-19-38-52.png" width="600">
 </p>
 <br>
 
 - Layer 2：記号のレイヤー
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-39-32.png" width="500">
+    <img src="img/README_2025-09-13-19-39-32.png" width="600">
 </p>
 <br>
 
 - Layer 3：数字、算術記号などのレイヤー
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-39-43.png" width="500">
+    <img src="img/README_2025-09-13-19-39-43.png" width="600">
 </p>
 <br>
 
 - Layer 4：Bluetooth切り替え、ファンクションキーのレイヤー
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-39-56.png" width="500">
+    <img src="img/README_2025-09-13-19-39-56.png" width="600">
 </p>
 <br>
 
@@ -525,7 +525,7 @@ SplitMatrix50のキーを押下し、PCでキー入力が可能か確認して�
 - ファームウェアをダウンロードし、キーボードに書き込むことで、キーマップ変更が反映されます。
 <br>
 <p align="center">
-    <img src="img/README_2025-09-13-19-41-11.png" width="500">
+    <img src="img/README_2025-09-13-19-41-11.png" width="600">
 </p>
 <br>
 
