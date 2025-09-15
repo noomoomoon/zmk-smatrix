@@ -14,6 +14,11 @@ SplitMatrix50 は、左右分割とオーソリニア配列のワイヤレス50�
   - [別途ご用意が必須なもの](#別途ご用意が必須なもの)
 <br>
 
+- 取扱説明書（セットアップ手順、注意事項など）はこちら
+  - [SplitMatrix50 取扱説明書](https://github.com/misshii3/zmk-smatrix/blob/main/MANUAL.md)
+<br>
+
+
 # 商品説明
 ### 特徴
 

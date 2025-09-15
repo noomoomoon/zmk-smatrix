@@ -3,6 +3,7 @@
 最新の取扱説明書は、以下でご確認ください。
 <br>
 https://github.com/misshii3/zmk-smatrix/blob/main/MANUAL.md
+<br>
 <img src="img/QR_MANUAL.png" width="100">
 <br>
 
