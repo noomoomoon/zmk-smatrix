@@ -174,13 +174,13 @@
             bindings = <
 &kp ESCAPE        &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR            &kp PERCENT            &kp BACKSPACE
 &kp TAB           &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                           &kp AMPERSAND    &kp SQT            &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SEMI               &kp ENTER
-&kp LEFT_SHIFT    &kp PERIOD    &kp SLASH     &kp STAR      &kp PLUS      &kp MINUS   &tog 6    &kp ENTER  &kp COLON        &kp NON_US_BSLH    &kp LESS_THAN     &kp GREATER_THAN      &kp FSLH               &kp MINUS
+&kp LEFT_SHIFT    &kp PERIOD    &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH   &tog 6    &kp ENTER  &kp COLON        &kp NON_US_BSLH    &kp LESS_THAN     &kp GREATER_THAN      &kp FSLH               &kp MINUS
 &kp LEFT_CONTROL  &kp LSHIFT    &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE     &lt 5 CLCK                       &to 0            &kp SPACE          &kp AT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
             >;
 
             sensor-bindings =
-                <&rot_kp UP_ARROW DOWN_ARROW>,
-                <&rot_kp RIGHT LEFT_ARROW>;
+                <&rot_kp RIGHT LEFT>,
+                <&rot_kp UP_ARROW DOWN_ARROW>;
         };
 
         layer_6 {
@@ -192,8 +192,8 @@
             >;
 
             sensor-bindings =
-                <&mouse_scrl SCRL_RIGHT SCRL_LEFT>,
-                <&mouse_scrl SCRL_UP SCRL_DOWN>;
+                <&rot_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp RIGHT LEFT>;
         };
     };
 };
