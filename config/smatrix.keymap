@@ -174,8 +174,8 @@
             bindings = <
 &kp ESCAPE        &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR            &kp PERCENT            &kp BACKSPACE
 &kp TAB           &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0                           &kp AMPERSAND    &kp SQT            &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SEMI               &kp ENTER
-&kp LEFT_SHIFT    &kp PERIOD    &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH   &tog 6    &kp ENTER  &kp COLON        &kp NON_US_BSLH    &kp LESS_THAN     &kp GREATER_THAN      &kp FSLH               &kp MINUS
-&kp LEFT_CONTROL  &kp COMMA     &kp COLON     &kp LEFT_ALT  &kp SPACE     &lt 5 CLCK                       &to 0            &kp SPACE          &kp AT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
+&kp LEFT_SHIFT    &kp EQUAL     &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH   &tog 6    &kp ENTER  &kp COLON        &kp NON_US_BSLH    &kp LESS_THAN     &kp GREATER_THAN      &kp FSLH               &kp MINUS
+&kp LEFT_CONTROL  &kp PERIOD    &kp COMMA     &kp LEFT_ALT  &kp SPACE     &lt 5 CLCK                       &to 0            &kp SPACE          &kp AT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
             >;
 
             sensor-bindings =
