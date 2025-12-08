@@ -123,7 +123,7 @@
 
             sensor-bindings =
                 <&rot_kp RIGHT LEFT>,
-                <&rot_kp UP_ARROW DOWN_ARROW>;
+                <&rot_kp DOWN_ARROW UP_ARROW>;
         };
 
         layer_1 {
@@ -180,7 +180,7 @@
 
             sensor-bindings =
                 <&rot_kp RIGHT LEFT>,
-                <&rot_kp UP_ARROW DOWN_ARROW>;
+                <&rot_kp DOWN_ARROW UP_ARROW>;
         };
 
         layer_6 {
@@ -192,7 +192,7 @@
             >;
 
             sensor-bindings =
-                <&rot_kp UP_ARROW DOWN_ARROW>,
+                <&rot_kp DOWN_ARROW UP_ARROW>,
                 <&inc_dec_kp RIGHT LEFT>;
         };
     };
