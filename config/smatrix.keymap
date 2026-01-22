@@ -117,7 +117,7 @@
             bindings = <
 &kp ESC           &kp Q     &kp W         &kp E         &kp R      &kp T                       &kp Y  &kp U      &kp I      &kp O       &kp P                  &kp BACKSPACE
 &kp TAB           &kp A     &kp S         &kp D         &kp F      &kp G                       &kp H  &kp J      &kp K      &kp L       &kp SEMI               &kp ENTER
-&mt EQUAL LSHFT   &kp Z     &kp X         &kp C         &kp V      &kp B       &to 6    &to 0  &kp N  &kp M      &kp COMMA  &kp PERIOD  &kp SLASH              &mt RSHFT MINUS
+&kp LSHFT         &kp Z     &kp X         &kp C         &kp V      &kp B       &to 6    &to 0  &kp N  &kp M      &kp COMMA  &kp PERIOD  &kp SLASH              &kp MINUS
 &kp LEFT_CONTROL  &mkp MB3  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &lt 5 CAPS                  &mo 7  &kp SPACE  &kp AT     &kp LPAR    &kp RIGHT_PARENTHESIS  &kp DELETE
             >;
 
