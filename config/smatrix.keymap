@@ -117,7 +117,7 @@
             bindings = <
 &kp ESC           &kp Q                      &kp W         &kp E         &kp R      &kp T                         &kp Y  &kp U           &kp I      &kp O       &kp P                  &kp BACKSPACE
 &kp TAB           &kp A                      &kp S         &kp D         &kp F      &kp G                         &kp H  &kp J           &kp K      &kp L       &kp SEMI               &kp ENTER
-&kp LSHFT         &kp Z                      &kp X         &kp C         &kp V      &kp B       &tog 6    &tog 7  &kp N  &kp M           &kp COMMA  &kp PERIOD  &kp SLASH              &kp MINUS
+&kp LSHFT         &kp Z                      &kp X         &kp C         &kp V      &kp B       &tog 6    &tog 0  &kp N  &kp M           &kp COMMA  &kp PERIOD  &kp SLASH              &kp MINUS
 &kp LEFT_CONTROL  &mt K_MENU K_CONTEXT_MENU  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &lt 5 CAPS                    &to 0  &kp APOSTROPHE  &kp AT     &kp LPAR    &kp RIGHT_PARENTHESIS  &kp DELETE
             >;
 
@@ -194,15 +194,6 @@
             sensor-bindings =
                 <&rot_kp DOWN_ARROW UP_ARROW>,
                 <&inc_dec_kp RIGHT LEFT>;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
