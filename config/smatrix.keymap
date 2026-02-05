@@ -198,10 +198,10 @@
 
         layer_7 {
             bindings = <
-&kp ESC    &kp F1      &kp F2        &kp F3    &kp F4     &kp F5                       &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP      &mkp MB2         &kp PG_UP      &kp BACKSPACE
-&kp TAB    &kp F6      &kp F7        &kp F8    &kp F9     &kp F10                      &mkp MB4        &mmv MOVE_LEFT  &kp LEFT_CONTROL  &mmv MOVE_RIGHT  &mkp MB5       &kp ENTER
-&kp LSHFT  &kp F11     &kp F12       &kp F13   &kp F14    &kp F15     &to 6    &tog 0  &msc SCRL_DOWN  &kp K_CMENU     &mmv MOVE_DOWN    &kp C_MENU       &kp PAGE_DOWN  &kp LSHIFT
-&kp LCTRL  &bt BT_NXT  &kp LEFT_WIN  &kp LALT  &kp SPACE  &lt 5 CLCK                   &mo 7           &mkp MB3        &macro_w_sshot    &kp END          &kp HOME       &kp DEL
+&kp ESC    &kp F1        &kp F2        &kp F3    &kp F4     &kp F5                       &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP      &mkp MB2         &kp PG_UP      &kp BACKSPACE
+&kp TAB    &kp F6        &kp F7        &kp F8    &kp F9     &kp F10                      &mkp MB4        &mmv MOVE_LEFT  &kp LEFT_CONTROL  &mmv MOVE_RIGHT  &mkp MB5       &kp ENTER
+&kp LSHFT  &kp F11       &kp F12       &kp F13   &kp F14    &kp F15     &to 6    &tog 0  &msc SCRL_DOWN  &kp K_CMENU     &mmv MOVE_DOWN    &kp C_MENU       &kp PAGE_DOWN  &bt BT_SEL 0
+&kp LCTRL  &bt BT_SEL 1  &kp LEFT_WIN  &kp LALT  &kp SPACE  &lt 5 CLCK                   &mo 7           &mkp MB3        &macro_w_sshot    &kp END          &kp HOME       &kp DEL
             >;
 
             sensor-bindings = <&rot_kp RIGHT LEFT>, <&rot_kp DOWN UP_ARROW>;
